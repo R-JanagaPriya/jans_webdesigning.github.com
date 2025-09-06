@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic To-Do List</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, rgba(236, 214, 16, 0.8), rgba(11, 240, 156, 0.692));
+    padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .todo-container {
+      max-width: 400px;
+      background: white;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(4, 4, 5, 0.2);
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background: #f1e3e3;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My To-Do List</h1>
+
+  <div class="todo-container">
+    <ul>
+      <li><input type="checkbox"> Learn HTML</li>
+      <li><input type="checkbox"> Practice CSS</li>
+      <li><input type="checkbox"> Build a To-Do List</li>
+      <li><input type="checkbox"> Revise daily</li>
+    </ul>
+  </div>
+
+</body>
+</html>
