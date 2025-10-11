@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      width: 200px;
+      height: 100vh;
+      background: white;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .sidebar img {
+      width: 100px;
+      border-radius: 50%;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .main {
+      margin-left: 220px;
+      padding: 50px;
+     background-image: linear-gradient(to right, rgba(243, 92, 198, 0.8), rgba(230, 14, 194, 0.692));
+      height: 100vh;
+      color: white;
+    }
+    .main h1 span {
+      background: teal;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .btn {
+      margin-top: 20px;
+    }
+    .btn button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn .read {
+      background: white;
+      color: black;
+    }
+    .btn .contact {
+      background: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <img src= "Assets/profile1.jpg">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Experience</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Resume</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h1>Hi, I'm <span>Janaga Priya.R</span></h1>
+    <h3>A Web Developer</h3>
+    <p>An passionate designing with a curious mind who enjoys solving complex and challenging real-world designs.</p>
+    <div class="btn">
+      <button class="read">Read More</button>
+      <button class="contact">Contact Me</button>
+    </div>
+  </div>
+</body>
+</html>

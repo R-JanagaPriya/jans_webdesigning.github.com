@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: white;
+    }
+
+    /* Styled Button */
+    .styled-box {
+      display: inline-block;
+      padding: 10px 30px;
+      margin: 20px;
+      background-color: #e979df;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      border: 2px solid #083d0b;
+      box-shadow: 3px 3px 5px gray;
+      cursor: pointer;
+    }
+
+    /* Heading */
+    h2 {
+      color: #333;
+      text-decoration: underline;
+    }
+
+    /* Image Container */
+    .image-container {
+      background: linear-gradient(to right, #82f3ad, #d7e974);
+      padding: 20px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      border-radius: 10px;
+    }
+
+    .image-container img {
+      border: 5px solid rgb(19, 59, 24);
+      width: 200px;
+      height: 130px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Hover Button */
+    .hover-btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 8px 20px;
+      background-color: purple;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hover-btn:hover {
+      background-color: violet;
+    }
+
+    /* Moving Animated Box */
+    .hover-box {
+      width: 80px;
+      height: 80px;
+      margin: 20px auto;
+      background: linear-gradient(purple, pink);
+      border-radius: 10px;
+      animation: moveBox 4s infinite alternate ease-in-out;
+    }
+
+    @keyframes moveBox {
+      0%   { transform: translateX(0) rotate(0deg); }
+      50%  { transform: translateX(200px) rotate(180deg); }
+      100% { transform: translateX(0) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="styled-box">STYLED BOX</button>
+
+  <h2>Welcome to CSS Elements!</h2>
+
+  <div class="image-container">
+  <img src="Assets/3.jpg" alt="Image1">
+  <img src="Assets/4.jpg" alt="Image2">
+  <img src="Assets/5.jpg" alt="Image3">
+  </div>
+
+  <button class="hover-btn">Hover Me!</button>
+
+  <div class="hover-box"></div>
+
+</body>
+</html>

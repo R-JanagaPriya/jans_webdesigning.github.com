@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pricing Plans</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; }
+    .plans { display: flex; justify-content: center; margin-top: 50px; }
+    .plan {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 20px;
+      width: 200px;
+    }
+    .plan h2 { background: black; color: white; padding: 10px; }
+    .plan.green h2 { background: green; }
+    .plan ul { list-style: none; padding: 0; }
+    .plan ul li { padding: 5px 0; }
+    button { background: green; color: white; padding: 10px; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Pricing Plans</h1>
+  <div class="plans">
+    <div class="plan">
+      <h2>Basic</h2>
+      <p>$9.99 / year</p>
+      <ul>
+        <li>10GB Storage</li>
+        <li>10 Emails</li>
+        <li>10 Domains</li>
+        <li>1GB Bandwidth</li>
+      </ul>
+      <button>Sign Up</button>
+    </div>
+    <div class="plan green">
+      <h2>Pro</h2>
+      <p>$24.99 / year</p>
+      <ul>
+        <li>25GB Storage</li>
+        <li>25 Emails</li>
+        <li>25 Domains</li>
+        <li>2GB Bandwidth</li>
+      </ul>
+      <button>Sign Up</button>
+    </div>
+    <div class="plan">
+      <h2>Premium</h2>
+      <p>$49.99 / year</p>
+      <ul>
+        <li>50GB Storage</li>
+        <li>50 Emails</li>
+        <li>50 Domains</li>
+        <li>5GB Bandwidth</li>
+      </ul>
+      <button>Sign Up</button>
+    </div>
+  </div>
+</body>
+</html>

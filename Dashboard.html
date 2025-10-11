@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LMS Dashboard</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    .sidebar { background: #463aec; color: white; width: 200px; height: 100vh; float: left; padding: 20px; }
+    .sidebar a { color: white; display: block; margin: 10px 0; text-decoration: none; }
+    .main { margin-left: 220px; padding: 20px; display: flex; }
+    .card {
+      flex: 1; margin: 10px; padding: 20px;
+      text-align: center; color: white; border-radius: 10px;
+    }
+    .blue { background: #e6e211; }
+    .green { background: #91eb6e; }
+    .red { background: #e99149; }
+    .purple { background: #6edee6; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2><u>OOBT LMS</u></h2><br>
+    <a href="#">Dashboard</a>
+    <a href="#">Courses</a>
+    <a href="#">Assignments</a>
+  </div>
+  <div class="main">
+    <div class="card blue"><h2>32</h2><p>Total Videos</p></div>
+    <div class="card green"><h2>10</h2><p>Completed</p></div>
+    <div class="card red"><h2>10</h2><p>Progress</p></div>
+    <div class="card purple"><h2>10</h2><p>Assignments</p></div>
+  </div>
+</body>
+</html>
