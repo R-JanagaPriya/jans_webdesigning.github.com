@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Card Grid</title>
+  <style>
+    .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+    .card{padding:12px;border-radius:8px;background:linear-gradient(120deg,#f3f3f3,#fff);box-shadow:0 1px 4px rgba(0,0,0,0.08)}
+  </style>
+</head>
+<body bgcolor="thistle">
+  <h1>Features</h1>
+  <div class="grid">
+    <div class="card"><h3>Fast</h3><p>Optimized for speed.</p></div>
+    <div class="card"><h3>Secure</h3><p>Security-first approach.</p></div>
+    <div class="card"><h3>Scalable</h3><p>Grow when you need to.</p></div>
+    <div class="card"><h3>Accessible</h3><p>Built with accessibility in mind.</p></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculator</title>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <input id="a" type="number" placeholder="Number A">
+  <input id="b" type="number" placeholder="Number B">
+  <select id="op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <button id="calc">Calculate</button>
+  <p>Result: <strong id="res">—</strong></p>
+
+  <script>
+    document.getElementById('calc').addEventListener('click', () => {
+      const a = parseFloat(document.getElementById('a').value) || 0;
+      const b = parseFloat(document.getElementById('b').value) || 0;
+      const op = document.getElementById('op').value;
+      let r = 'NaN';
+      if (op === '+') r = a + b;
+      if (op === '-') r = a - b;
+      if (op === '*') r = a * b;
+      if (op === '/') r = b !== 0 ? a / b : 'Error (div by 0)';
+      document.getElementById('res').textContent = r;
+    });
+  </script>
+</body>
+</html>
